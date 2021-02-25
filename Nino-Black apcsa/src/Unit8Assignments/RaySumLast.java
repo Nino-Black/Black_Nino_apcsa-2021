@@ -16,7 +16,6 @@ public class RaySumLast
 			}
 			else
 				total += 0;
-			
 		}
 		if (total <= 0)
 			total = -1;
