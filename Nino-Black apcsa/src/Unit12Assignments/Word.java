@@ -16,18 +16,7 @@ public class Word implements Comparable<Word>
 
 	public int compareTo( Word rhs )
 	{	
-		for(int i = 0;i < word.length - 1;i++)
-	    {
-	      int spot = i; 
-	      for(int j = i;j < word.length; j++){
-	        if(word[j].compareTo(word[spot])>0)
-	          spot=j;
-	      }
-	      Comparable save = word[i];
-	      word[i]= word[spot];
-	      word[spot] = save;
-
-		return 
+		return word.compareTo(word);
 	}
 
 	public String toString()
