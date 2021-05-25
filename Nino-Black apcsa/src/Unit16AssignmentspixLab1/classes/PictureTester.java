@@ -59,6 +59,20 @@ public class PictureTester
     beach.explore();
   }
   
+  public static void testKeepOnlyRed() {
+	    Picture beach = new Picture("beach.jpg");
+	    beach.explore();
+	    beach.keepOnlyRed();
+	    beach.explore();
+  }
+  
+  public static void testKeepOnlyGreen() {
+	    Picture beach = new Picture("beach.jpg");
+	    beach.explore();
+	    beach.keepOnlyGreen();
+	    beach.explore();
+  }
+  
   public static void testNegate() {
     Picture beach = new Picture("beach.jpg");
     beach.explore();
@@ -140,6 +154,26 @@ public class PictureTester
     swan2.edgeDetection2(10);
     swan2.explore();
   }
+  
+  public static void testGetCountRedOverValue(int val) {
+      Picture beach = new Picture("beach.jpg");
+      int count = beach.getCountRedOverValue(val);
+      System.out.println(count);
+  }
+  
+  public static void testSetRedToHalfValueInTopHalf() {
+      Picture beach = new Picture("beach.jpg");
+      beach.explore();
+      beach.setRedToHalfValueInTopHalf();
+      beach.explore();
+  }
+  
+  public static void testClearBlueOverValue(int val) {
+      Picture beach = new Picture("beach.jpg");
+      beach.explore();
+      beach.clearBlueOverValue(val);
+      beach.explore();
+  }
 
   
   
@@ -166,11 +200,8 @@ public class PictureTester
     //testCopy();
     //testEdgeDetection();
     //testEdgeDetection2();
-    //testChromakey();
-    //testEncodeAndDecode();
     //testGetCountRedOverValue(250);
     //testSetRedToHalfValueInTopHalf();
     //testClearBlueOverValue(200);
-    //testGetAverageForColumn(0);
   }
 }
