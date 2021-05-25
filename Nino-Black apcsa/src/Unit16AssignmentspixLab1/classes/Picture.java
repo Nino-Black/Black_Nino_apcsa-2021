@@ -515,7 +515,8 @@ public class Picture extends SimplePicture
   public void clearBlueOverValue(int val) {
       Pixel[][] pixels = this.getPixels2D();
       Pixel currPixel = null;
-      for (int r = 0; r < pixels.length; r++) {
+      for (int r = 0; r < pixels.length; r++)
+      {
           for (int c = 0; c < pixels[0].length; c++) {
               currPixel = pixels[r][c];
               if (currPixel.getBlue() > val) {
@@ -525,7 +526,6 @@ public class Picture extends SimplePicture
       }
   }
 
-  
   /* Main method for testing - each class in Java can have a main 
    * method 
    */

@@ -175,7 +175,12 @@ public class PictureTester
       beach.explore();
   }
 
-  
+  public static void testCopy() {
+      Picture katie = new Picture("KatieFancy.jpg");
+      Picture blank = new Picture("640x480.jpg");
+      blank.copy(katie, 4, 67);
+      blank.show();
+  }
   
   /** Main method for testing.  Every class can have a main
     * method in Java */
@@ -184,8 +189,8 @@ public class PictureTester
     // uncomment a call here to run a test
     // and comment out the ones you don't want
     // to run
-    testZeroBlue();
-    //testKeepOnlyBlue();
+    //testZeroBlue();
+    testKeepOnlyBlue();
     //testKeepOnlyRed();
     //testKeepOnlyGreen();
     //testNegate();
